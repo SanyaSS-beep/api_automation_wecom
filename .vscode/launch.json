@@ -1,0 +1,11 @@
+{
+    "name": "Pytest",
+    "type": "python",
+    "request": "launch",
+    "module": "pytest",
+    "python": "isPythonInterpreter",
+    "args": [
+        "-s",
+        "${workspaceFolder}/testcase"
+    ]
+}
