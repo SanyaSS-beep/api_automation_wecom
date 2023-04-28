@@ -1,11 +1,27 @@
 {
-    "name": "Pytest",
-    "type": "python",
-    "request": "launch",
-    "module": "pytest",
-    "python": "isPythonInterpreter",
-    "args": [
-        "-s",
-        "${workspaceFolder}/testcase"
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Run Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "./src"
+            }
+        },
+        {
+            "name": "Python: pytest",
+            "type": "python",
+            "request": "launch",
+            "module": "pytest",
+            "cwd": "${workspaceRoot}",
+            "env": {
+                "PYTHONPATH": "."
+            },
+            "envFile": "${workspaceRoot}/.env",
+            "console": "integratedTerminal",
+        }
     ]
 }
