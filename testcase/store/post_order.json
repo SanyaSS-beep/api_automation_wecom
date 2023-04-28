@@ -1,0 +1,8 @@
+{
+    "id": {{id}},
+    "petId": {{id}},
+    "quantity": {{quantity}},
+    "shipDate": "2023-04-26T10:34:04.993Z",
+    "status": "approved",
+    "complete": true
+  }

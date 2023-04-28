@@ -1,0 +1,8 @@
+# - test_input:
+#     data:
+#       name: "{{ faker.name }}"
+#       category: "{{ faker.bothify }}"
+#       status: "{{ faker.random_choices(elements=['available', 'pending', 'sold']) }}"
+#     expected:
+#       status_code: 200
+#   use_faker: true
