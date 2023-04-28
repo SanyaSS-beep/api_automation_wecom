@@ -1,9 +1,9 @@
 import os
 import pytest
 
-from api_info.requester import Requester
+from api.requester import Requester
 
-@pytest.fixture(autouse=True, scope='function')
+@pytest.fixture(scope='function')
 def token(request, cache):
     token_value = cache.get("token", None)
     if token_value is None:
